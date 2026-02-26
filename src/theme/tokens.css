@@ -1,0 +1,49 @@
+:root {
+  --bg: #0a0a0a;
+  --bg-surface: #161616;
+  --bg-elevated: #1a1a1a;
+  --gold: #E3C330;
+  --text: #f0f0ef;
+  --text-muted: #888;
+  --text-dim: #555;
+  --border: #333;
+  --audio: #E3C330;
+  --cv: #4A9EDE;
+  --gate: #DE4A4A;
+  --green: #5DBE6E;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Avenir Next Condensed', 'Arial Narrow', Arial, sans-serif;
+  overflow: hidden;
+}
+
+/* React Flow overrides */
+.react-flow__node {
+  font-family: 'Avenir Next Condensed', 'Arial Narrow', Arial, sans-serif;
+}
+
+.react-flow__controls button {
+  background: var(--bg-elevated) !important;
+  border-color: var(--border) !important;
+  color: var(--text-muted) !important;
+  fill: var(--text-muted) !important;
+}
+
+.react-flow__controls button:hover {
+  background: var(--bg-surface) !important;
+}
+
+.react-flow__minimap {
+  background: #111 !important;
+}
